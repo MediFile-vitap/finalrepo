@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Login</title>
+    <style>
+        body {
+            background-image: url('patLog.jpeg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+            background-size: cover; /* Cover the entire background */
+            color: #000;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding-left: 450px;
+        }
+
+        .login-container {
+            display: flex;
+            align-items: center;
+            /*border: 2px solid #223752; /* White border with 2px width */
+            padding: 20px; /* Add padding to create space between border and content */
+            border-radius: 8px; 
+            justify-content: flex-start; 
+        }
+
+        .login-info {
+            text-align: left;
+            margin-right: 20px;
+            border-radius: 8px; 
+            padding: 20px; /* Add padding to create space between border and content */
+        }
+
+        .login-heading {
+            font-size: 36px; /* Larger font size */
+            font-weight: bold;
+            color: #223752; /* White color for the heading */
+            border-radius: 8px; 
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #396294; /* White color for the subtitle */
+            border-radius: 8px; 
+        }
+
+        .form-container {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            /*border: 2px solid #fc17a4; /* White border with 2px width */
+        }
+        .register-container{
+            /*border: 2px solid #2617fc; /* White border with 2px width */
+            border-radius: 8px;
+            text-align: center;
+        }
+        .register-container p {
+            font-size: 10px;
+            margin-bottom: 5px;
+        }
+
+        .button1 {
+            background-color: #396294;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .button1:hover {
+            background-color: #0e5a9a;
+        }
+
+        .button2 {
+            background-color: transparent;
+            color: #223752;
+            /*padding: 8px 16px;*/
+            border: none;
+            border-radius: 2px;
+            height: 15px;
+            cursor: pointer;
+            font-size: 10px;
+        }
+
+        .button2:hover {
+            background-color: #b4b4b4;
+        }
+
+        label {
+            display: block;
+            margin-bottom:4px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /*button {
+            background-color: #396294;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0e5a9a;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-info">
+            <div class="login-heading">Patient Login</div>
+            <div class="subtitle">Welcome! Please login to your account.</div>
+        </div>
+        <div class="form-container">
+            <form action="/login" method="post">
+                <label for="username">Aadhar Number:</label>
+                <input type="number" id="EmpID" name="EmpID" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="Password" name="Password" required>
+                <br>
+                <button type="submit" class="button1">Login</button>
+                <br>
+                <div class="register-container">
+                    <p>Not registered yet? Register now</p>
+                    <button onclick="location.href='register.html'" class="button2">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- New container for registration -->
+    
+</body>
+</html>  
+

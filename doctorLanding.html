@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Login</title>
+    <style>
+       body {
+    background-image: url('1.png');
+    background-size: cover;
+    color: #223752;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%; /* Ensures it fills the available horizontal space */
+    align-items: center; /* Vertical alignment */
+    justify-content: space-around; /* Distributes space evenly around items */
+    font-weight: bold;
+}
+   .login-heading {
+        font-size: 36px; /* Adjust size as needed */
+        font-weight: bold; /* Make heading bold */
+    }
+    .subtitle {
+        font-size: 20px; /* Adjust size as needed */
+        font-weight: bold; /* Make subtitle bold */
+    }
+.translucent-box {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 800px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the items vertically */
+    align-items: center; /* Center the items horizontally */
+    gap: 20px; /* Spacing between each item */
+    padding-top: 50px;
+}
+
+.icon-box {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+.icon-box i {
+    font-size: 40px;
+    color: #000000;
+}
+.icon-box {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    background-color: #ffffff7e; /* Set initial background color */
+    border-radius: 8px; /* Add border-radius */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Add smooth transitions */
+}
+
+.icon-box:hover {
+    background-color: #ffffff; /* Change background color on hover */
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+
+     </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="translucent-box">
+            <div class="login-heading">Hello Dr.____ Welcome back!</div>
+            <div class="subtitle">What would you like to do?</div>
+        
+            <div class="button-container">
+                   <div class="icon-box" style= "background-color: #ffffff7e; border-radius: 8px;" onclick="window.location.href='emergencyPg.html'">
+                      <i class="fa-solid fa-bed"></i>
+                      <h4>Check Emergency Report</h4>
+                    </div>  
+                    
+                   <div class="icon-box" style= "background-color: #ffffff7e; border-radius: 8px;" onclick="window.location.href='detailedPres.html'">
+                      <i class="fa-solid fa-bed"></i>
+                      <h4>Check Detailed Prescriptions</h4>
+                    </div>
+                <div class="icon-box" style= "background-color: #ffffff7e; border-radius: 8px;" onclick="window.location.href='upload.html'">
+                    <i class="fa-solid fa-bed"></i>
+                    <h4>Upload New Prescription</h4>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
+
+
+
+
