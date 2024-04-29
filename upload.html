@@ -1,7 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Hospital Authority</title></head>
-    <body>
-        <h1>Hello!</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Login</title>
+    <style>
+        body {
+            background-image: url('1.png');
+            background-size: cover;
+            color: #223752;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .translucent-box {
+            background-color: rgba(255, 255, 255, 0.4);
+            width: 800px;
+            height: 500px;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative; /* Add relative positioning */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-heading {
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 2-px;
+            position: absolute;
+            top: 50px;
+        }
+
+        /* Style for the file input button */
+        #fileInputContainer {
+            position: absolute; /* Add absolute positioning */
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Ensure the button stays above the overlay */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #fileInput {
+            width: 200px;
+            padding: 10px;
+            border: 2px solid #223752;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #223752;
+            cursor: pointer;
+        }
+
+        /* Hide the default file input button */
+        #fileInput[type="file"] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<div class="login-container">
+    <div class="translucent-box">
+        <div class="login-heading">Upload Prescription</div>
+        
+        <!-- Box overlay for the file input button -->
+        <div id="fileInputContainer">
+            <label for="fileInput" id="fileInputLabel">Choose a PDF file</label>
+            <input type="file" id="fileInput" accept=".pdf">
+        </div>
+    </div>
+</div>
+</body>
 </html>
